@@ -37,6 +37,7 @@ lazy val libraries = Seq(
   "mysql" % "mysql-connector-java" % mysqlConnectorVersion % Test
 
 )
+libraryDependencies ++= libraries
 
 /*lazy val root = (project in file("."))
   .settings(
