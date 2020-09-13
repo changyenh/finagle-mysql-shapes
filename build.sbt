@@ -7,6 +7,7 @@ val shapelessVersion = "2.3.3"
 val scalaTestVersion = "3.1.2"
 val testcontainersVersion = "1.14.3"
 val testcontainersScalaVersion = "0.38.0"
+/*
 
 lazy val commonSettings = Seq(
   scalaVersion := "2.12.4",
@@ -22,6 +23,7 @@ lazy val commonSettings = Seq(
   ),
   scalacOptions in (Compile, console) ~= (_.filterNot(_ == "-Ywarn-unused:imports"))
 )
+*/
 
 lazy val libraries = Seq(
   "com.twitter" %% "finagle-mysql" % finagleVersion,
@@ -36,7 +38,7 @@ lazy val libraries = Seq(
 
 )
 
-lazy val root = (project in file("."))
+/*lazy val root = (project in file("."))
   .settings(
     commonSettings,
     name := "finagle-mysql-shapes",
@@ -45,4 +47,4 @@ lazy val root = (project in file("."))
     publishMavenStyle := true,
     libraryDependencies ++= libraries,
     scalafixSettings
-  )
+  )*/
